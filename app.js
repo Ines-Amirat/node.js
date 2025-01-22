@@ -16,14 +16,14 @@ console.log(__filename);
 //     console.log("hello world");
 // },1000);
 
+const names = require('./module');
+const func =  require('./function');
+const objs =  require('./object');
+
+require('./addNumber');
 
 
-const name1 ="ahmed";
-const name2 = "mohamed";
+console.log(names);
+func("ines");
+console.log(objs);
 
-
-const sayHello = (name) =>{
-     console.log(name)
-}
-
-sayHello(name1)
