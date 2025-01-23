@@ -27,3 +27,17 @@ console.log(names);
 func("ines");
 console.log(objs);
 
+//import os module (one of the built-in node js )
+const os = require('os')
+const user = os.userInfo()
+console.log(user)
+
+const curruntOs ={
+    name: os.type(),
+    release: os.release(),
+    memory: os.totalmem(),
+    freeSp: os.freemem(),
+}
+
+
+console.log(curruntOs)
